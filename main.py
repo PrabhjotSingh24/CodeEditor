@@ -8,7 +8,7 @@ import subprocess
 
 
 class CodeEditor(Tk):
-    editor_font_size = 20
+    editor_font_size = 15
 
     def __init__(self):
         super().__init__()
@@ -65,7 +65,7 @@ class CodeEditor(Tk):
         self.output = Text(
             self.main_window,
             width=self.winfo_screenwidth(),
-            height=5,
+            height=9,
             font=("jetbrains mono", self.editor_font_size),
             state=DISABLED,
         )
