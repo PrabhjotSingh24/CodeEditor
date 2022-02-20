@@ -6,5 +6,3 @@ def lpadding(string,pad_value=0):
 
 def space_between(str1,str2,space):
     return str1+((space-(len(str1)+len(str2)))*" ")+str2 if (len(str1)+len(str2))<space else str1 +" "+str2
-# print(len(space_between("Save As","Ctrl+Shift+S",30)))
-# print(len(space_between("Save","Ctrl+S",30)))
