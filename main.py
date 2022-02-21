@@ -29,15 +29,15 @@ class CodeEditor(Tk):
         self.main_menu = Menu(self)
         self.first_menu = Menu(self.main_menu, tearoff=0)
         self.first_menu.add_command(
-            label=space_between("New File", "Ctrl+N", 30), command=self.new)
-        self.first_menu.add_command(label=space_between(
-            "Open File", "Ctrl+O", 30), command=self.open)
+            label=unifrom_separation("New File", "Ctrl+N", 15), command=self.new)
+        self.first_menu.add_command(label=unifrom_separation(
+            "Open File", "Ctrl+O", 15), command=self.open)
         self.recent_files = Menu(self.first_menu, tearoff=0)
         self.first_menu.add_separator()
-        self.first_menu.add_command(label=space_between(
-            "Save", "Ctrl+S", 30), command=self.save)
-        self.first_menu.add_command(label=space_between(
-            "Run", "Ctrl+R", 30), command=self.run)
+        self.first_menu.add_command(label=unifrom_separation(
+            "Save", "Ctrl+S", 15), command=self.save)
+        self.first_menu.add_command(label=unifrom_separation(
+            "Run", "Ctrl+R", 15), command=self.run)
         self.main_menu.add_cascade(menu=self.first_menu, label="File")
         self.run_button=Menu(self.main_menu)
         self.main_menu.add_command(label="Run",command=self.run)
